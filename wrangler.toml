@@ -1,0 +1,3 @@
+name = "worker-vpn-secure"
+main = "index.js"
+compatibility_date = "2023-09-01"
