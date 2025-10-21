@@ -47,8 +47,8 @@
   </style>
 </head>
 <body>
-  <video id="bgVideo" class="bg-video" loop playsinline>
-    <source src="HnVideoEditor_2025_10_10_131846142.mp4" type="video/mp4">
+  <video id="bgVideo" class="bg-video" autoplay muted loop playsinline>
+    <source src="HnVideoEditor_2025_10_10_131134889.mp4" type="video/mp4">
   </video>
   <div class="video-overlay"></div>
   <main class="card" role="main">
@@ -72,7 +72,6 @@
     const video = document.getElementById('bgVideo');
     async function tryAutoPlay() {
       try {
-        video.muted = false;
         await video.play();
       } catch (e) {
         video.muted = true;
